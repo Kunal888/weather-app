@@ -1,0 +1,101 @@
+body {
+  background: url(./bg.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: serif;    
+  width: 50%;
+  margin: auto;
+	margin-top: 4em;
+  margin-bottom: 4em;
+  color: white;
+  background-color: rgba(21, 32, 48, 0.6);
+	padding: auto;
+  border-radius: 25px;
+}
+
+#form {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+#search-text {
+  margin: 0;
+  width: 60%;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em;
+  font-size: larger;
+}
+
+#search-button {
+  position: relative;
+  padding: 0.5em;
+  width: 30%;
+  margin: 0 auto;
+  font-size: larger;
+  cursor: pointer;
+	outline: 0;
+	background-color: #00698C;
+	color: white;
+	border: none;
+	border-bottom: 5px solid #0093C4;
+	border-radius: 25px;
+}
+
+.data-item {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Verdana;
+  margin: 0.25em;
+  margin-bottom: 0.5em;
+  padding: 0.1em;
+}
+
+#temperature {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 0.5px solid white;
+  border-radius: 20px;
+  width: 30%;
+  margin: auto;
+  padding: 0.5em;
+  font-weight: 600;
+}
+
+.data-item img {
+  background-color: rgba(255, 255, 255, 0.85);
+  opacity: 0.8;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  width: 30%;
+  margin: auto;
+  padding: 0.2em;
+}
+
+#error-text {
+  background: #c51244;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Verdana;
+  margin-bottom: 1em;
+  padding: 0.1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 95%;
+  }
+}
